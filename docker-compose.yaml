@@ -1,0 +1,9 @@
+name: proxybitssh
+services:
+  proxy:
+    container_name: proxybitssh
+    image: invid/proxybitssh:latest
+    ports:
+      - "443:443"
+    volumes:
+      - ./ssh-keys-pub:/etc/ssh/keys-pub
